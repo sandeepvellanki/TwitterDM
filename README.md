@@ -27,16 +27,16 @@ and so on......
 # Benefits:
 1. Works across windows and MAC as it is a jupyter notebook
 2. Works locally, with flatfiles as backend tables.
-    a. The Twitter API keys need not be shared with anyone
-    b. No worry of your followers data being with a 3rd party
+    1. The Twitter API keys need not be shared with anyone
+    2. No worry of your followers data being with a 3rd party
 3. Ability to choose the exact 1000 followers to send the DMs on any given day based on filters you provide like follower count, keywords in bios, exculded list of followers and so on.
 4. Easy to backup data.
 5. Visually check the following counts:
-      a. Followers count at the precise moment
-      b. Followers count that have been loaded in local tables
-      c. Followers that meet the filter criteria
-      d. Followers for whom we sent out DMs (that succeeded and failed)
-      e. Followers for whome we can still send the DMS
+      1. Followers count at the precise moment
+      2. Followers count that have been loaded in local tables
+      3. Followers that meet the filter criteria
+      4. Followers for whom we sent out DMs (that succeeded and failed)
+      5. Followers for whome we can still send the DMS
 6. Update tables with new followers and thier meta data with a click of a button.
 
 # Screenshots:
