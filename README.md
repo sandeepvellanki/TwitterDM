@@ -39,6 +39,17 @@ and so on......
       e. Followers for whome we can still send the DMS
 6. Update tables with new followers and thier meta data with a click of a button.
 
-#Screenshots:
+# Screenshots:
 
-![alt text](https://github.com/sandeepvellanki/TwitterDM/Images/image.jpg?raw=true)
+Daily status of DMs sent
+![Sample status chart](https://github.com/sandeepvellanki/TwitterDM/blob/master/Sample%20status%20chart.png?raw=true)
+
+Screenshot of meta data of followers being stored
+![meta data](https://github.com/sandeepvellanki/TwitterDM/blob/master/meta%20data%20stored.png?raw=true)
+
+Screenshot of time to pull 220k records
+![220k records](https://github.com/sandeepvellanki/TwitterDM/blob/master/more%20than%20220k%20records%20pulled%20in%20less%20than%2030%20mins.PNG?raw=true)
+
+Screenshots of DMs sent
+![DMsent1](https://github.com/sandeepvellanki/TwitterDM/blob/master/DMsentscreenshot1.jpg?raw=true)
+![DMsent2](https://github.com/sandeepvellanki/TwitterDM/blob/master/DMsentscreenshots2.jpg?raw=true)
