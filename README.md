@@ -22,7 +22,7 @@ and so on......
 1. Download the 'Twitter DM application.ipynb' file to a local folder.
 2. Pip install all prerequisite packages.
 3. Update the 'Inputs:' cell on the notebook with your parameters.
-4. Keep the 'FirstLoadFlag' as 'True' for the first load and changes to 'False' for subsequent runs.
+4. Keep the 'FirstLoadFlag' as 'True' for the first load and change to 'False' for subsequent runs.
 
 # Benefits:
 1. Works across windows and MAC as it is a jupyter notebook
