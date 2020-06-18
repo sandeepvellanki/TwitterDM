@@ -8,13 +8,6 @@ The Jupyter notebook that acts as a local application that can send Direct Messa
 This works without any issues for twitter accounts with huge followers. 
 (tested with an account having ~450k followers, but would work for even bigger accounts as well.)
 
-## First time load times:
-1. With accounts less than 75k followers: ~20-25 mins
-2. With accounts less than 150k followers: 40-45 mins
-3. With accounts less than 225k followers: 60-65 mins
-4. With accounts less then 300k followers: 80-85 mins
-and so on......
-
 ## Prerequisites:
 1. Jupyter notebook
 
@@ -38,7 +31,7 @@ and so on......
 ![DMsent2](https://github.com/sandeepvellanki/TwitterDM/blob/master/DMsentscreenshots2.jpg?raw=true)
 
 # Benefits:
-1. Works across windows and MAC as it is a jupyter notebook
+1. Works across windows and MAC as it is a jupyter notebook. The size of the application is 12kb (very lite application)
 2. Works locally, with flatfiles as backend tables. (can be updated to SQLite, but flatfiles seem just fine)
     1. The Twitter API keys need not be shared with anyone
     2. No worry of your followers data being with a 3rd party
@@ -51,6 +44,15 @@ and so on......
       4. Followers for whom we sent out DMs (that succeeded and failed)
       5. Followers for whome we can still send the DMS
 6. Update tables with new followers and thier meta data with a click of a button.
+
+## First time load times:
+1. With accounts less than 75k followers: ~20-25 mins
+2. With accounts less than 150k followers: 40-45 mins
+3. With accounts less than 225k followers: 60-65 mins
+4. With accounts less then 300k followers: 80-85 mins
+and so on......
+
+Subsequent load/run times are very minimal (under a minute).
 
 # Planned Updates:
 A Saas tool as follows:
