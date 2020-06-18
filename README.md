@@ -16,23 +16,33 @@ This works without any issues for twitter accounts with huge followers.
 and so on......
 
 ## Prerequisites:
-1. Jupyter notebook server
-2. Pandas
-3. Tweepy
-4. and Seaborn python packages
+1. Jupyter notebook
 
 # How to:
 1. Download the 'Twitter DM application.ipynb' file to a local folder.
-2. Pip install all prerequisite packages.
-3. Update the 'Inputs:' cell on the notebook with your parameters.
-4. Keep the 'FirstLoadFlag' as 'True' for the first load and change to 'False' for subsequent runs.
+2. Fire up Jupyter notebook application and open the above file.
+3. Update the Inputs cell. Most of the defaults work.
+![Inputs](https://github.com/sandeepvellanki/TwitterDM/blob/master/Inputs.PNG?raw=true)
+4. Run each cell one after other (Cntlr+Enter to run each cell).
+5. 'Install and load ..' cell: installs all prerequsite packages and imports them
+6. 'Backup data' cell: Backs the data as losing it mean running time consuming intial loads.
+7. 'Status Visual' cell: Give a visual representation of followers count, DB status and DMS sent etc. See the screenshot below:
+![Sample status chart](https://github.com/sandeepvellanki/TwitterDM/blob/master/Sample%20status%20chart.png?raw=true)
+8. 'Update Follower IDS list' cell: Updates any new followers from last run. Intial run will load all follower IDs in Ids table.
+![220k records](https://github.com/sandeepvellanki/TwitterDM/blob/master/more%20than%20220k%20records%20pulled%20in%20less%20than%2030%20mins.PNG?raw=true)
+9. 'Update metadata' cell: Updates metadata like bio, followers count and so on for the followers.
+![meta data](https://github.com/sandeepvellanki/TwitterDM/blob/master/meta%20data%20stored.png?raw=true)
+10. 'Send DMs for today' cell: Filters, Sorts, choose and sends the number of DMs you want to send on a particular day.
+![DMsent1](https://github.com/sandeepvellanki/TwitterDM/blob/master/DMsentscreenshot0.png?raw=true)
+
+![DMsent2](https://github.com/sandeepvellanki/TwitterDM/blob/master/DMsentscreenshots2.jpg?raw=true)
 
 # Benefits:
 1. Works across windows and MAC as it is a jupyter notebook
-2. Works locally, with flatfiles as backend tables.
+2. Works locally, with flatfiles as backend tables. (can be updated to SQLite, but flatfiles seem just fine)
     1. The Twitter API keys need not be shared with anyone
     2. No worry of your followers data being with a 3rd party
-3. Ability to choose the exact 1000 followers to send the DMs on any given day based on filters you provide like follower count, keywords in bios, exculded list of followers and so on.
+3. Ability to choose the N followers to send the DMs on any given day based on filters you provide like follower count, keywords in bios, exculded list of followers and so on.
 4. Easy to backup data.
 5. Visually check the following counts:
       1. Followers count at the precise moment
@@ -42,22 +52,8 @@ and so on......
       5. Followers for whome we can still send the DMS
 6. Update tables with new followers and thier meta data with a click of a button.
 
-# Screenshots:
-
-### Daily status of DMs sent:
-
-![Sample status chart](https://github.com/sandeepvellanki/TwitterDM/blob/master/Sample%20status%20chart.png?raw=true)
-
-### Screenshot of meta data of followers being stored:
-
-![meta data](https://github.com/sandeepvellanki/TwitterDM/blob/master/meta%20data%20stored.png?raw=true)
-
-### Screenshot of time to pull 220k records:
-
-![220k records](https://github.com/sandeepvellanki/TwitterDM/blob/master/more%20than%20220k%20records%20pulled%20in%20less%20than%2030%20mins.PNG?raw=true)
-
-### Screenshots of DMs sent:
-
-![DMsent1](https://github.com/sandeepvellanki/TwitterDM/blob/master/DMsentscreenshot0.png?raw=true)
-
-![DMsent2](https://github.com/sandeepvellanki/TwitterDM/blob/master/DMsentscreenshots2.jpg?raw=true)
+# Planned Updates:
+A Saas tool as follows:
+1. Create a frontend UI that works on twitter login and takes in inputs via a form. Same inputs as above.
+2. Takes to a dashboard that shows the status of your sent DMs and other related metrics.
+3. Ability to schdule DMs.
