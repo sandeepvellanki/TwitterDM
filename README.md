@@ -1,3 +1,6 @@
+For any clarification or demo, send email to vellanki.sandeep@gmail.com.
+Will respond to your request as soon as I can.
+
 # TwitterDM
 
 The Jupyter notebook that acts as a local application that can send Direct Messages (DMs) to all of your followers based on the keywords in their bio and/or count of followers they have. It allows you to update your followers list with new followers whenever you want to and add these to the list of followers whom you want to send automated DMs to.
